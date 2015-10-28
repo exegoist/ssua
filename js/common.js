@@ -21,15 +21,9 @@ var scrollingScreen = (function() {
           $('nav div ul li.active').removeClass("active");
           $('nav div ul li').eq(screen).addClass("active");
 
-          //console.log($('nav div ul li').eq(screen).attr("class"));
           position = (-screen * 100) + '%';
           $sections.css('top', position);
-          $('nav div ul li a').click(function(){
-              $sections.css('top', position);
-          })
-
-        }
-
+          }
       });
 
       $sections.on('transitionend', function() {
@@ -37,9 +31,7 @@ var scrollingScreen = (function() {
       });
       $('nav div ul li').click(function() {
           $('nav div ul li.active').removeClass("active");
-          console.log($('nav div ul li').index(this));
           $('nav div ul li').eq($('nav div ul li').index(this)).addClass("active");
-
           position = (-$('nav div ul li').index(this) * 100) + '%';
           $sections.css('top', position);
       });
