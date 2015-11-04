@@ -41,11 +41,11 @@ html, body {
 .section_4 {
   background-color: rgba(150, 200, 250, 0.8);
 }
-.container {
+/*.container {
   overflow: hidden;
   height: 100%;
   background-color: rgba(0, 129, 217, 0.5);
-}
+}*/
 .section__title {
   position: absolute;
   top: 50%;
@@ -59,41 +59,4 @@ html, body {
 }
 .navbar-inverse {
   background-color: rgba(0, 0, 0, 0.8);
-}
-nav .container {
-  background-color: rgba(0, 0, 0, 0);
-}
-.navbar-inverse .navbar-brand {
-  color: #fff;
-}
-.navbar-inverse .navbar-nav>li>a {
-  color: rgb(182, 206, 238);
-}
-
-section .container {
-  padding-top: 50px;
-}
-
-.section_1 p {
-  margin-top: 1em;
-}
-
-.section_1 .col-md-4 a {
-  margin-top: 1em;
-  font-size: 2em;
-}
-
-.section_1 img {
-  width: 100%;
-}
-.section_1 .row {
-  margin-top: 4em;
-}
-.section_1 .col-md-3 {
-
-  background-color: rgba(0, 0, 0, 0.7);
-  font-size: 1.5em;
-}
-.section_1 .col-md-3 .red {
-  color: red;
 }

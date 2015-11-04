@@ -18,8 +18,8 @@ var scrollingScreen = (function() {
             screen++;
             scroll = false;
           }
-          $('nav div ul li.active').removeClass("active");
-          $('nav div ul li').eq(screen).addClass("active");
+          $('ul.left li.active').removeClass("active");
+          $('ul.left li').eq(screen).addClass("active");
 
           position = (-screen * 100) + '%';
           $sections.css('top', position);
@@ -29,10 +29,10 @@ var scrollingScreen = (function() {
       $sections.on('transitionend', function() {
         scroll = true;
       });
-      $('nav div ul li').click(function() {
-          $('nav div ul li.active').removeClass("active");
-          $('nav div ul li').eq($('nav div ul li').index(this)).addClass("active");
-          position = (-$('nav div ul li').index(this) * 100) + '%';
+      $('ul.left li').click(function() {
+          $('ul.left li.active').removeClass("active");
+          $('ul.left li').eq($('ul.left li').index(this)).addClass("active");
+          position = (-$('ul.left li').index(this) * 100) + '%';
           $sections.css('top', position);
       });
 
